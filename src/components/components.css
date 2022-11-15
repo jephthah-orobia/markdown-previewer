@@ -1,0 +1,49 @@
+.navbar {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  border-bottom: 3px double gray;
+}
+
+.editor-portrait,
+.preview-portrait {
+  grid-row: 2 / span 2;
+  overflow: hidden;
+}
+
+.editor-portrait {
+  grid-column: 1 / span 1;
+}
+
+.preview-portrait {
+  grid-column: 2 / span 1;
+}
+
+.editor-landscape,
+.preview-landscape {
+  grid-column: 1 / span 2;
+  overflow: hidden;
+}
+
+.editor-landscape {
+  grid-row: 2 / span 1;
+}
+
+.preview-landscape {
+  grid-row: 3 / span 1;
+}
+
+#editor,
+#preview {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0 auto 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid gray;
+  min-height: calc(100% - 1.6rem);
+  max-height: calc(100% - 1.6rem);
+}
+
+#preview {
+  padding: 1rem;
+}
